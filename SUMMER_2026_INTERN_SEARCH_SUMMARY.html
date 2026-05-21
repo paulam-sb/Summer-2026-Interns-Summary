@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slate Brands — Summer 2026 Intern Search Summary</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap');
+
+  :root {
+    --navy: #1B2A4A;
+    --navy-light: #253757;
+    --gold: #C9A84C;
+    --gold-light: #E8D08A;
+    --cream: #FAF7F2;
+    --white: #FFFFFF;
+    --green: #2E7D52;
+    --green-bg: #EBF5EE;
+    --amber: #B76E00;
+    --amber-bg: #FFF3DC;
+    --red: #B83232;
+    --red-bg: #FDEAEA;
+    --purple: #5B21B6;
+    --purple-bg: #F3EFFF;
+    --hired: #065F46;
+    --hired-bg: #D1FAE5;
+    --gray: #6B7280;
+    --gray-light: #F3F4F6;
+    --border: #E5E7EB;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', sans-serif; background: var(--cream); color: var(--navy); line-height: 1.6; }
+
+  /* ─── HEADER ─── */
+  .page-header {
+    background: linear-gradient(135deg, var(--navy) 0%, #2C3E6A 100%);
+    padding: 56px 60px 48px;
+    position: relative; overflow: hidden;
+  }
+  .page-header::before {
+    content: ''; position: absolute; top: -80px; right: -80px;
+    width: 400px; height: 400px; border-radius: 50%;
+    background: rgba(201,168,76,0.07);
+  }
+  .page-header::after {
+    content: ''; position: absolute; bottom: -80px; left: 38%;
+    width: 250px; height: 250px; border-radius: 50%;
+    background: rgba(201,168,76,0.04);
+  }
+  .brand-tag {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(201,168,76,0.15); border: 1px solid rgba(201,168,76,0.3);
+    color: var(--gold); font-size: 11px; font-weight: 600; letter-spacing: 2px;
+    text-transform: uppercase; padding: 6px 14px; border-radius: 20px; margin-bottom: 18px;
+  }
+  .brand-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--gold); }
+  .page-header h1 {
+    font-family: 'Playfair Display', serif; font-size: 44px; font-weight: 700;
+    color: var(--white); margin-bottom: 8px; line-height: 1.2;
+  }
+  .page-header h1 span { color: var(--gold); }
+  .page-header .subtitle { color: rgba(255,255,255,0.55); font-size: 14px; margin-bottom: 40px; }
+  .header-stats { display: flex; gap: 36px; flex-wrap: wrap; align-items: center; }
+  .stat-box { text-align: center; }
+  .stat-box .num { font-size: 34px; font-weight: 800; color: var(--gold); display: block; line-height: 1; }
+  .stat-box .num.green { color: #6EE7B7; }
+  .stat-box .lbl { font-size: 10px; font-weight: 600; color: rgba(255,255,255,0.45); text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; display: block; }
+  .stat-div { width: 1px; background: rgba(255,255,255,0.1); align-self: stretch; min-height: 40px; }
+
+  /* ─── HIRED BANNER ─── */
+  .hired-banner {
+    background: linear-gradient(135deg, #064E3B, #065F46);
+    margin: 0; padding: 28px 60px;
+    display: flex; align-items: center; gap: 24px; flex-wrap: wrap;
+  }
+  .hired-banner .hb-icon { font-size: 32px; flex-shrink: 0; }
+  .hired-banner h3 { color: #6EE7B7; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 6px; }
+  .hired-banner p { color: rgba(255,255,255,0.8); font-size: 13px; }
+  .hired-card {
+    background: rgba(255,255,255,0.08); border: 1px solid rgba(110,231,183,0.25);
+    border-radius: 12px; padding: 14px 20px; min-width: 200px;
+  }
+  .hired-card .hc-name { color: #fff; font-weight: 700; font-size: 15px; }
+  .hired-card .hc-role { color: #6EE7B7; font-size: 12px; font-weight: 500; margin-top: 2px; }
+  .hired-card .hc-status { color: rgba(255,255,255,0.5); font-size: 11px; margin-top: 4px; }
+
+  /* ─── DECLINED BANNER ─── */
+  .declined-banner {
+    background: #FFF8F0; border-top: 1px solid #FDE8C9; border-bottom: 1px solid #FDE8C9;
+    padding: 20px 60px; display: flex; align-items: flex-start; gap: 16px; flex-wrap: wrap;
+  }
+  .db-label { font-size: 12px; font-weight: 700; color: var(--amber); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+  .db-item {
+    background: #fff; border: 1px solid #FDE8C9; border-radius: 10px;
+    padding: 12px 16px; display: flex; align-items: center; gap: 12px;
+    flex: 1; min-width: 260px; max-width: 400px;
+  }
+  .db-dot { width: 10px; height: 10px; border-radius: 50%; background: #F59E0B; flex-shrink: 0; }
+  .db-name { font-weight: 700; font-size: 14px; color: var(--navy); }
+  .db-reason { font-size: 12px; color: var(--gray); margin-top: 2px; }
+
+  /* ─── MAIN ─── */
+  .main { max-width: 1120px; margin: 0 auto; padding: 48px 40px 60px; }
+
+  /* ─── OVERVIEW TABLE ─── */
+  .overview-section {
+    background: var(--white); border-radius: 18px; border: 1.5px solid var(--border);
+    overflow: hidden; margin-bottom: 52px;
+    box-shadow: 0 2px 16px rgba(27,42,74,0.06);
+  }
+  .overview-header { background: var(--navy); padding: 20px 28px; }
+  .overview-header h3 { color: var(--white); font-size: 15px; font-weight: 700; }
+  .overview-header p { color: rgba(255,255,255,0.45); font-size: 12px; margin-top: 2px; }
+  table { width: 100%; border-collapse: collapse; }
+  th { background: #F8F9FB; padding: 11px 16px; text-align: left; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--gray); border-bottom: 1px solid var(--border); }
+  td { padding: 13px 16px; font-size: 13px; border-bottom: 1px solid #F3F4F6; color: #374151; vertical-align: middle; }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: #FAFBFF; }
+  .td-name { font-weight: 600; color: var(--navy); font-size: 14px; }
+
+  /* ─── SECTION TITLE ─── */
+  .section-title { display: flex; align-items: center; gap: 14px; margin-bottom: 22px; margin-top: 52px; }
+  .section-title:first-child { margin-top: 0; }
+  .role-icon { width: 42px; height: 42px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0; }
+  .section-title h2 { font-size: 21px; font-weight: 700; }
+  .section-title .role-meta { font-size: 12px; color: var(--gray); }
+  .section-line { flex: 1; height: 1px; background: var(--border); }
+  .count-pill { font-size: 12px; font-weight: 600; padding: 4px 13px; border-radius: 20px; white-space: nowrap; }
+
+  /* ─── SUBSECTION ─── */
+  .subsection-label { font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--gray); margin: 26px 0 14px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+
+  /* ─── GRID ─── */
+  .candidate-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 16px; margin-bottom: 8px; }
+
+  /* ─── CARD ─── */
+  .card { background: var(--white); border-radius: 16px; padding: 20px 20px 18px; border: 1.5px solid var(--border); transition: box-shadow 0.2s, transform 0.2s; position: relative; overflow: hidden; }
+  .card:hover { box-shadow: 0 8px 28px rgba(27,42,74,0.09); transform: translateY(-2px); }
+  .card.approved { border-color: #B8DFC8; }
+  .card.rejected { border-color: #F0CACA; }
+  .card.pending  { border-color: #FAE0A0; }
+  .card.hired    { border-color: #6EE7B7; box-shadow: 0 0 0 2px rgba(6,95,70,0.12); }
+  .card.declined-card { border-color: #FDE8C9; }
+
+  .card-accent { position: absolute; top: 0; left: 0; right: 0; height: 4px; border-radius: 16px 16px 0 0; }
+  .approved .card-accent { background: linear-gradient(90deg, #2E7D52, #52B97A); }
+  .rejected .card-accent { background: linear-gradient(90deg, #B83232, #D96060); }
+  .pending  .card-accent { background: linear-gradient(90deg, #B76E00, #F0A830); }
+  .hired    .card-accent { background: linear-gradient(90deg, #065F46, #059669); }
+  .declined-card .card-accent { background: linear-gradient(90deg, #D97706, #FBBF24); }
+
+  .card-header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 12px; }
+  .candidate-name { font-size: 16px; font-weight: 700; line-height: 1.3; }
+  .candidate-school { font-size: 12px; color: var(--gray); margin-top: 2px; }
+
+  .score-badge { display: flex; flex-direction: column; align-items: center; flex-shrink: 0; margin-left: 10px; }
+  .score-num { font-size: 22px; font-weight: 800; line-height: 1; }
+  .approved .score-num, .hired .score-num { color: var(--green); }
+  .rejected .score-num { color: var(--red); }
+  .pending  .score-num, .declined-card .score-num { color: var(--amber); }
+  .score-denom { font-size: 10px; color: var(--gray); font-weight: 500; }
+
+  .score-bar-wrap { height: 4px; background: var(--gray-light); border-radius: 4px; margin-bottom: 12px; overflow: hidden; }
+  .score-bar { height: 100%; border-radius: 4px; }
+  .approved .score-bar, .hired .score-bar { background: linear-gradient(90deg, var(--green), #52B97A); }
+  .rejected .score-bar { background: linear-gradient(90deg, var(--red), #D96060); }
+  .pending  .score-bar, .declined-card .score-bar { background: linear-gradient(90deg, var(--amber), #F0A830); }
+
+  /* ─── PILLS ─── */
+  .status-pill { display: inline-flex; align-items: center; gap: 5px; font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 20px; margin-bottom: 11px; }
+  .pill-dot { width: 5px; height: 5px; border-radius: 50%; background: currentColor; }
+  .pill-hired    { background: var(--hired-bg); color: var(--hired); }
+  .pill-approved { background: var(--green-bg); color: var(--green); }
+  .pill-rejected { background: var(--red-bg); color: var(--red); }
+  .pill-contacted{ background: #EEF2FF; color: #4338CA; }
+  .pill-interview{ background: #FFF3E0; color: #B45309; }
+  .pill-awaiting { background: var(--amber-bg); color: var(--amber); }
+  .pill-declined { background: #FFF8F0; color: #B45309; border: 1px solid #FDE8C9; }
+  .pill-pending  { background: var(--amber-bg); color: var(--amber); }
+  .pill-onboarding { background: #D1FAE5; color: #065F46; }
+
+  /* ─── CARD CONTENT ─── */
+  .card-detail { font-size: 12.5px; color: #374151; line-height: 1.55; margin-bottom: 9px; }
+  .card-detail strong { color: var(--navy); font-weight: 600; }
+
+  .contribution-box {
+    background: #F0F7FF; border-left: 3px solid #3B82F6; border-radius: 0 8px 8px 0;
+    padding: 9px 12px; margin-top: 10px; font-size: 12px; color: #1E40AF; line-height: 1.5;
+  }
+  .contribution-box .cb-label { font-weight: 700; font-size: 10.5px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; color: #2563EB; }
+
+  .rejection-reason { background: var(--red-bg); border-left: 3px solid var(--red); border-radius: 0 8px 8px 0; padding: 8px 12px; font-size: 12px; color: #991B1B; font-style: italic; margin-top: 10px; }
+  .declined-note { background: #FFF8F0; border-left: 3px solid #F59E0B; border-radius: 0 8px 8px 0; padding: 8px 12px; font-size: 12px; color: #92400E; font-style: italic; margin-top: 10px; }
+
+  .tag-list { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 10px; }
+  .tag { font-size: 11px; background: var(--gray-light); color: #374151; padding: 3px 9px; border-radius: 6px; font-weight: 500; }
+  .tag.gold  { background: #FEF9EC; color: #92640A; border: 1px solid #F6E0A0; }
+  .tag.blue  { background: #EFF6FF; color: #1D4ED8; border: 1px solid #BFDBFE; }
+  .tag.green { background: var(--hired-bg); color: var(--hired); }
+
+  /* ─── SCORE CHIPS ─── */
+  .sc-high { display:inline-block; font-weight:700; font-size:12px; padding:2px 8px; border-radius:6px; background:#DCFCE7; color:#166534; }
+  .sc-med  { display:inline-block; font-weight:700; font-size:12px; padding:2px 8px; border-radius:6px; background:#FEF9C3; color:#854D0E; }
+  .sc-low  { display:inline-block; font-weight:700; font-size:12px; padding:2px 8px; border-radius:6px; background:#FEE2E2; color:#991B1B; }
+
+  /* ─── FOOTER ─── */
+  .page-footer { background: var(--navy); color: rgba(255,255,255,0.4); text-align: center; padding: 28px; font-size: 12px; margin-top: 60px; }
+  .page-footer span { color: var(--gold); }
+
+  @media print {
+    .page-header, .hired-banner { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .card { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="page-header">
+  <div class="brand-tag"><span class="brand-dot"></span>Slate Brands · Internal</div>
+  <h1>Summer 2026 <span>Intern Search</span></h1>
+  <p class="subtitle">Full Recruitment Summary · Prepared by Paula Medina · May 2026</p>
+  <div class="header-stats">
+    <div class="stat-box"><span class="num">46</span><span class="lbl">Reviewed</span></div>
+    <div class="stat-div"></div>
+    <div class="stat-box"><span class="num">24</span><span class="lbl">Approved</span></div>
+    <div class="stat-div"></div>
+    <div class="stat-box"><span class="num green">2</span><span class="lbl">✓ Hired</span></div>
+    <div class="stat-div"></div>
+    <div class="stat-box"><span class="num">2</span><span class="lbl">Declined</span></div>
+    <div class="stat-div"></div>
+    <div class="stat-box"><span class="num">4</span><span class="lbl">Open Roles</span></div>
+  </div>
+</div>
+
+<!-- HIRED BANNER -->
+<div class="hired-banner">
+  <div class="hb-icon">🎉</div>
+  <div>
+    <h3>Now Onboarding</h3>
+    <p>NDA sent · In progress as of May 15, 2026</p>
+  </div>
+  <div class="hired-card">
+    <div class="hc-name">Maisie Henshaw</div>
+    <div class="hc-role">Digital Marketing Intern</div>
+    <div class="hc-status">NDA under review — discussing survival clause</div>
+  </div>
+  <div class="hired-card">
+    <div class="hc-name">Gabriela Carvajal</div>
+    <div class="hc-role">Digital Marketing Intern</div>
+    <div class="hc-status">Onboarding active — schedule being confirmed</div>
+  </div>
+</div>
+
+<!-- DECLINED BANNER -->
+<div class="declined-banner">
+  <div style="width:100%"><div class="db-label">⚠️ Declined — Accepted Another Internship</div></div>
+  <div class="db-item">
+    <span class="db-dot"></span>
+    <div>
+      <div class="db-name">Logan Mack</div>
+      <div class="db-reason">Digital Marketing Intern (Northeastern) · Declined May 5 — "I've just recently committed to another internship." Strong candidate for future cycles.</div>
+    </div>
+  </div>
+  <div class="db-item">
+    <span class="db-dot"></span>
+    <div>
+      <div class="db-name">Nicole Meskos</div>
+      <div class="db-reason">Content & Social Media Intern (direct offer from Judah) · Declined April 25 — "I have accepted a different internship for this summer." Interested in staying connected.</div>
+    </div>
+  </div>
+</div>
+
+<div class="main">
+
+  <!-- OVERVIEW TABLE -->
+  <div class="overview-section">
+    <div class="overview-header">
+      <h3>At-a-Glance Overview</h3>
+      <p>All roles · Current status as of May 21, 2026</p>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Role</th><th>Reviewed</th><th>Approved</th><th>Rejected</th><th>Contacted</th><th>Hired</th><th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="td-name">Partnerships & PR Intern</td>
+          <td>15</td><td>7</td><td>8</td><td>7</td><td>—</td>
+          <td><span class="status-pill pill-interview"><span class="pill-dot"></span>Interviews Done</span></td>
+        </tr>
+        <tr>
+          <td class="td-name">Influencer Partnerships Intern</td>
+          <td>26 + 1 unreadable</td><td>9</td><td>17</td><td>9</td><td>—</td>
+          <td><span class="status-pill pill-interview"><span class="pill-dot"></span>Interviews Done</span></td>
+        </tr>
+        <tr>
+          <td class="td-name">Digital Marketing Intern</td>
+          <td>11</td><td>8</td><td>3</td><td>8</td><td class="td-name" style="color:#065F46">2 ✓</td>
+          <td><span class="status-pill pill-onboarding"><span class="pill-dot"></span>Onboarding in Progress</span></td>
+        </tr>
+        <tr>
+          <td class="td-name">Data Research Intern</td>
+          <td>12</td><td>6</td><td>6</td><td>0</td><td>—</td>
+          <td><span class="status-pill pill-pending"><span class="pill-dot"></span>Outreach Pending</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <!-- ═══ ROLE 1: PARTNERSHIPS & PR ═══ -->
+  <div class="section-title">
+    <div class="role-icon" style="background:#EEF2FF;">🤝</div>
+    <div><h2>Partnerships & PR Intern</h2><div class="role-meta">Summer 2026 · Remote · Unpaid</div></div>
+    <div class="section-line"></div>
+    <div class="count-pill" style="background:#EEF2FF;color:#4F46E5;">15 reviewed · 7 approved</div>
+  </div>
+
+  <div class="subsection-label">✅ Approved Candidates</div>
+  <div class="candidate-grid">
+
+    <div class="card approved">
+      <div class="card-accent"></div>
+      <div class="card-header">
+        <div><div class="candidate-name">Alexa Amico</div><div class="candidate-school">Rutgers University</div></div>
+        <div class="score-badge"><div class="score-num">9</div><div class="score-denom">/10</div></div>
+      </div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:90%"></div></div>
+      <span class="status-pill pill-interview"><span class="pill-dot"></span>Interviewed — Apr 24 (with Judah)</span>
+      <div class="card-detail">TikTok/Instagram/Pinterest brand marketing. HBO Max campaign. "Influencer & VIP Outreach" in skills. Had intro call + full interview with Judah Abraham.</div>
+      <div class="contribution-box">
+        <div class="cb-label">💡 Contribution to Slate Brands</div>
+        Could lead VIP & influencer outreach for new brand launches across Slate's portfolio. Her TikTok/IG fluency directly supports talent-led brand campaigns. Brings existing brand partnership execution (HBO Max, beauty brands).
+      </div>
+      <div class="tag-list"><span class="tag gold">⭐ Top Pick</span><span class="tag">TikTok</span><span class="tag">VIP Outreach</span><span class="tag">Pinterest</span><span class="tag">CapCut</span></div>
+    </div>
+
+    <div class="card approved">
+      <div class="card-accent"></div>
+      <div class="card-header">
+        <div><div class="candidate-name">Jada Gail</div><div class="candidate-school">FIT — Advertising Marketing & Comms (3.8 GPA)</div></div>
+        <div class="score-badge"><div class="score-num">9</div><div class="score-denom">/10</div></div>
+      </div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:90%"></div></div>
+      <span class="status-pill pill-contacted"><span class="pill-dot"></span>Contacted</span>
+      <div class="card-detail">Press release writing, media research, KPI tracking. PRSSA member. Brand Rep at Aerie. Application specifically written for Slate Brands.</div>
+      <div class="contribution-box">
+        <div class="cb-label">💡 Contribution to Slate Brands</div>
+        Could draft press kits and media pitches for new brand launches. PRSSA network provides earned media connections. Strong KPI tracking skills support reporting across partnerships.
+      </div>
+      <div class="tag-list"><span class="tag gold">⭐ Top Pick</span><span class="tag">PR Writing</span><span class="tag">Media Research</span><span class="tag">KPI Tracking</span></div>
+    </div>
+
+    <div class="card approved">
+      <div class="card-accent"></div>
+      <div class="card-header">
+        <div><div class="candidate-name">Jessica Burke</div><div class="candidate-school">Pepperdine University</div></div>
+        <div class="score-badge"><div class="score-num">8</div><div class="score-denom">/10</div></div>
+      </div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:80%"></div></div>
+      <span class="status-pill pill-interview"><span class="pill-dot"></span>Interviewed — Tue Apr 29 (3:30 PM)</span>
+      <div class="card-detail">Responded enthusiastically. Available Weds–Fri after 12pm. Strong PR and brand communications background.</div>
+      <div class="contribution-box">
+        <div class="cb-label">💡 Contribution to Slate Brands</div>
+        Media relations and brand communication support for Slate's portfolio brands. Her Pepperdine network could open West Coast media opportunities.
+      </div>
+      <div class="tag-list"><span class="tag">PR</span><span class="tag">Brand Strategy</span><span class="tag">Media Relations</span></div>
+    </div>
+
+    <div class="card approved">
+      <div class="card-accent"></div>
+      <div class="card-header">
+        <div><div class="candidate-name">Jasmine Collins</div><div class="candidate-school">University of Alabama</div></div>
+        <div class="score-badge"><div class="score-num">8</div><div class="score-denom">/10</div></div>
+      </div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:80%"></div></div>
+      <span class="status-pill pill-interview"><span class="pill-dot"></span>Interviewed — Week of Apr 28</span>
+      <div class="card-detail">Highly responsive — replied within minutes. Available all week. Partnerships and media outreach experience.</div>
+      <div class="contribution-box">
+        <div class="cb-label">💡 Contribution to Slate Brands</div>
+        Partnership coordination and media database management. Fast communicator — well-suited to managing external partner relationships and timelines.
+      </div>
+      <div class="tag-list"><span class="tag">Media Outreach</span><span class="tag">G-Suite</span><span class="tag">Brand Comms</span></div>
+    </div>
+
+    <div class="card approved">
+      <div class="card-accent"></div>
+      <div class="card-header">
+        <div><div class="candidate-name">Boey Lin</div><div class="candidate-school">LIM College</div></div>
+        <div class="score-badge"><div class="score-num">8</div><div class="score-denom">/10</div></div>
+      </div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:80%"></div></div>
+      <span class="status-pill pill-contacted"><span class="pill-dot"></span>Contacted</span>
+      <div class="card-detail">Purple PR intern experience. Showroom and PR operations exposure. LIM College fashion marketing background.</div>
+      <div class="contribution-box">
+        <div class="cb-label">💡 Contribution to Slate Brands</div>
+        Real-world PR agency experience at Purple PR translates directly to supporting Slate's brand communications. Showroom ops background useful for product seeding and sample coordination.
+      </div>
+      <div class="tag-list"><span class="tag">Purple PR</span><span class="tag">Fashion</span><span class="tag">PR Operations</span></div>
+    </div>
+
+    <div class="card approved">
+      <div class="card-accent"></div>
+      <div class="card-header">
+        <div><div class="candidate-name">Dhriti Shah</div><div class="candidate-school">Rutgers University</div></div>
+        <div class="score-badge"><div class="score-num">7</div><div class="score-denom">/10</div></div>
+      </div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:70%"></div></div>
+      <span class="status-pill pill-contacted"><span class="pill-dot"></span>Contacted</span>
+      <div class="card-detail">Princess Polly Ambassador (2M+ follower brand, 30K+ profile views). Social Media Manager +20% engagement. Also approved for Influencer Partnerships.</div>
+      <div class="contribution-box">
+        <div class="cb-label">💡 Contribution to Slate Brands</div>
+        Brand ambassador program management across Slate's portfolio. Her Princess Polly experience directly mirrors Slate's talent-led brand model. Can manage ambassador outreach and content deliverables.
+      </div>
+      <div class="tag-list"><span class="tag">Brand Ambassador</span><span class="tag">Social Media</span><span class="tag">Content</span></div>
+    </div>
+
+    <div class="card approved">
+      <div class="card-accent"></div>
+      <div class="card-header">
+        <div><div class="candidate-name">Isabel Boodell</div><div class="candidate-school">Georgetown University</div></div>
+        <div class="score-badge"><div class="score-num">7</div><div class="score-denom">/10</div></div>
+      </div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:70%"></div></div>
+      <span class="status-pill pill-interview"><span class="pill-dot"></span>Responded — Available Mon Apr 27 after 3:30 PM</span>
+      <div class="card-detail">Georgetown communications background. Organized with strong writing skills. Available and engaged in the process.</div>
+      <div class="contribution-box">
+        <div class="cb-label">💡 Contribution to Slate Brands</div>
+        Strategic comms and partnership support. Georgetown network provides exposure to professional and media circles that could benefit Slate's brand visibility.
+      </div>
+      <div class="tag-list"><span class="tag">Strategy</span><span class="tag">Communications</span><span class="tag">G-Suite</span></div>
+    </div>
+
+  </div>
+
+  <div class="subsection-label">❌ Rejected Candidates</div>
+  <div class="candidate-grid">
+    <div class="card rejected"><div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Sara Hamdallah</div><div class="candidate-school">FIT</div></div><div class="score-badge"><div class="score-num">6</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:60%"></div></div>
+      <span class="status-pill pill-rejected"><span class="pill-dot"></span>Rejected</span>
+      <div class="rejection-reason">Academic PR interest only — all real-world experience is retail (Hollister, waitressing). No professional comms role. Missing G-Suite proficiency.</div>
+    </div>
+    <div class="card rejected"><div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Lila Rao</div><div class="candidate-school">LIM College</div></div><div class="score-badge"><div class="score-num">5</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:50%"></div></div>
+      <span class="status-pill pill-rejected"><span class="pill-dot"></span>Rejected</span>
+      <div class="rejection-reason">All experience is academic/club-level. No professional PR or partnership work to demonstrate readiness.</div>
+    </div>
+    <div class="card rejected"><div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Neda Jeizan</div><div class="candidate-school">—</div></div><div class="score-badge"><div class="score-num">4</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:40%"></div></div>
+      <span class="status-pill pill-rejected"><span class="pill-dot"></span>Rejected</span>
+      <div class="rejection-reason">Limited PR-specific experience. Insufficient alignment with partnership development and media relations requirements.</div>
+    </div>
+    <div class="card rejected"><div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Olivia Wroblewska</div><div class="candidate-school">—</div></div><div class="score-badge"><div class="score-num">4</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:40%"></div></div>
+      <span class="status-pill pill-rejected"><span class="pill-dot"></span>Rejected</span>
+      <div class="rejection-reason">Does not sufficiently match PR and partnerships core requirements.</div>
+    </div>
+    <div class="card rejected"><div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Amanda Brown</div><div class="candidate-school">Michigan State University</div></div><div class="score-badge"><div class="score-num">3</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:30%"></div></div>
+      <span class="status-pill pill-rejected"><span class="pill-dot"></span>Rejected</span>
+      <div class="rejection-reason">Advertising Management major but all experience is retail. No PR, media outreach, or partnership management experience.</div>
+    </div>
+    <div class="card rejected"><div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Paris Gooden</div><div class="candidate-school">Univ. of Arkansas</div></div><div class="score-badge"><div class="score-num">3</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:30%"></div></div>
+      <span class="status-pill pill-rejected"><span class="pill-dot"></span>Rejected</span>
+      <div class="rejection-reason">Healthcare/sports industry focus only. No beauty or PR alignment.</div>
+    </div>
+    <div class="card rejected"><div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Kaylyn Smith</div><div class="candidate-school">Fashion Design</div></div><div class="score-badge"><div class="score-num">3</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:30%"></div></div>
+      <span class="status-pill pill-rejected"><span class="pill-dot"></span>Rejected</span>
+      <div class="rejection-reason">Fashion design/styling background. No PR, communications, or partnership experience.</div>
+    </div>
+    <div class="card declined-card"><div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Erin Lozano</div><div class="candidate-school">LIM College — Fashion Marketing</div></div><div class="score-badge"><div class="score-num">5</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:50%"></div></div>
+      <span class="status-pill pill-rejected"><span class="pill-dot"></span>Rejected for P&PR</span>
+      <div class="declined-note">Primarily a content/social media profile — not aligned enough for P&PR. However, she was scored 8/10 and interviewed for the Influencer Partnerships role instead.</div>
+    </div>
+  </div>
+
+
+  <!-- ═══ ROLE 2: INFLUENCER PARTNERSHIPS ═══ -->
+  <div class="section-title">
+    <div class="role-icon" style="background:#FFF0F6;">✨</div>
+    <div><h2>Influencer Partnerships Intern</h2><div class="role-meta">Summer 2026 · Remote · Unpaid</div></div>
+    <div class="section-line"></div>
+    <div class="count-pill" style="background:#FFF0F6;color:#9D174D;">26 reviewed · 9 approved</div>
+  </div>
+
+  <div class="subsection-label">✅ Approved Candidates</div>
+  <div class="candidate-grid">
+
+    <div class="card approved">
+      <div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Mua Hirose</div><div class="candidate-school">FIT — Direct & Interactive Marketing (3.84 GPA)</div></div><div class="score-badge"><div class="score-num">9</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:90%"></div></div>
+      <span class="status-pill pill-contacted"><span class="pill-dot"></span>Contacted</span>
+      <div class="card-detail">Social Media Assistant for 1.1M IG / 175K TikTok influencer @hena.yng. Managed partnerships with Casetify, Pacsun, Olaplex. 500K+ follower growth, 40% viewer retention improvement. Bilingual EN/JA.</div>
+      <div class="contribution-box">
+        <div class="cb-label">💡 Contribution to Slate Brands</div>
+        Already doing this job in a live setting. Can manage influencer partnerships end-to-end for Slate's talent-led brands — from outreach to deliverable tracking. Japanese bilingualism opens potential Asian market influencer relationships.
+      </div>
+      <div class="tag-list"><span class="tag gold">⭐ Top Pick</span><span class="tag">Campaign Management</span><span class="tag">Adobe CC</span><span class="tag">Canva</span><span class="tag">CapCut</span></div>
+    </div>
+
+    <div class="card approved">
+      <div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Ji Yun Jung</div><div class="candidate-school">UC Berkeley</div></div><div class="score-badge"><div class="score-num">9</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:90%"></div></div>
+      <span class="status-pill pill-awaiting"><span class="pill-dot"></span>Follow-up Sent — May 20</span>
+      <div class="card-detail">Digital Influencer Marketing Intern at Collab Asia for LG — managing IG, Facebook & YouTube channels. Marketing Strategist at PEAKUP. YouTube Shorts 10K+ views. Replied late but still interested.</div>
+      <div class="contribution-box">
+        <div class="cb-label">💡 Contribution to Slate Brands</div>
+        Global influencer tracking experience (LG/Collab Asia) would support multi-platform performance reporting across Slate's brand portfolio. Her Collab Asia work means she understands KOL campaigns at a professional agency level.
+      </div>
+      <div class="tag-list"><span class="tag gold">⭐ Top Pick</span><span class="tag">Influencer Mktg</span><span class="tag">LG · Collab Asia</span><span class="tag">YouTube</span></div>
+    </div>
+
+    <div class="card approved">
+      <div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Alexa Amico</div><div class="candidate-school">Rutgers University</div></div><div class="score-badge"><div class="score-num">9</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:90%"></div></div>
+      <span class="status-pill pill-interview"><span class="pill-dot"></span>Interviewed — Apr 24 (Dual Role)</span>
+      <div class="card-detail">"Influencer & VIP Outreach" listed as a core skill. TikTok, Instagram, Pinterest brand marketing. Approved for both Influencer Partnerships and P&PR roles.</div>
+      <div class="contribution-box">
+        <div class="cb-label">💡 Contribution to Slate Brands</div>
+        One of the strongest multi-role fits in the entire pipeline. Can straddle influencer management and brand partnerships. Brings VIP contact strategy skills rare at intern level.
+      </div>
+      <div class="tag-list"><span class="tag gold">⭐ Dual Role Fit</span><span class="tag">VIP Outreach</span><span class="tag">TikTok</span><span class="tag">Pinterest</span></div>
+    </div>
+
+    <div class="card approved">
+      <div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Avery Sun</div><div class="candidate-school">Tufts University</div></div><div class="score-badge"><div class="score-num">9</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:90%"></div></div>
+      <span class="status-pill pill-interview"><span class="pill-dot"></span>Interviewed — Apr 28 (4:20 PM)</span>
+      <div class="card-detail">KOL analysis using Xiaohongshu backend data. Built influencer databases, drafted outreach, negotiated rebate terms, supervised contracts. Secured $3,000+ in sponsorships at Tufts.</div>
+      <div class="contribution-box">
+        <div class="cb-label">💡 Contribution to Slate Brands</div>
+        Brings real contract and negotiation experience — can own the influencer database and outreach pipeline from day one. Xiaohongshu/Chinese platform expertise opens reach for Slate's international brand potential.
+      </div>
+      <div class="tag-list"><span class="tag gold">⭐ Top Pick</span><span class="tag">KOL Analysis</span><span class="tag">Contract Mgmt</span><span class="tag">Xiaohongshu</span></div>
+    </div>
+
+    <div class="card approved">
+      <div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Erin Lozano</div><div class="candidate-school">LIM College — Fashion Marketing</div></div><div class="score-badge"><div class="score-num">8</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:80%"></div></div>
+      <span class="status-pill pill-interview"><span class="pill-dot"></span>Interviewed — Mon Apr 27 (1:30 PM)</span>
+      <div class="card-detail">Currently creating 3 TikTok/IG Reels/week at Kitme internship. Filming, editing, captions, community engagement. Explicitly lists "influencer marketing" as a skill. NYFW experience.</div>
+      <div class="contribution-box">
+        <div class="cb-label">💡 Contribution to Slate Brands</div>
+        Proven content production cadence (3 posts/week) means she can support Slate's social channels without ramp-up time. NYFW network valuable for fashion beauty crossover campaigns.
+      </div>
+      <div class="tag-list"><span class="tag">Influencer Mktg</span><span class="tag">TikTok Reels</span><span class="tag">NYFW</span><span class="tag">Community Mgmt</span></div>
+    </div>
+
+    <div class="card approved">
+      <div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Maisie Henshaw</div><div class="candidate-school">Syracuse University — Newhouse School</div></div><div class="score-badge"><div class="score-num">8</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:80%"></div></div>
+      <span class="status-pill pill-hired"><span class="pill-dot"></span>✓ Hired — Onboarding as Digital Marketing Intern</span>
+      <div class="card-detail">Newhouse School of Communications, Fashion & Beauty Milestone. TNH Agency Strategist — KPIs, consumer research, campaign strategy. Instagram/TikTok skills.</div>
+      <div class="contribution-box">
+        <div class="cb-label">💡 Contribution to Slate Brands</div>
+        Campaign strategy and consumer research for Slate's digital marketing. Newhouse Comms training means strong analytical storytelling — can turn data into actionable insights for the team.
+      </div>
+      <div class="tag-list"><span class="tag green">✓ Onboarding</span><span class="tag">Campaign Strategy</span><span class="tag">KPIs</span><span class="tag">Consumer Research</span></div>
+    </div>
+
+    <div class="card approved">
+      <div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Dhriti Shah</div><div class="candidate-school">Rutgers University</div></div><div class="score-badge"><div class="score-num">8</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:80%"></div></div>
+      <span class="status-pill pill-contacted"><span class="pill-dot"></span>Contacted</span>
+      <div class="card-detail">Princess Polly Ambassador for 2M+ follower brand. 30K+ profile views. Social Media Manager with +20% engagement growth. Dual approved: Influencer Partnerships + P&PR.</div>
+      <div class="contribution-box">
+        <div class="cb-label">💡 Contribution to Slate Brands</div>
+        Princess Polly experience maps almost 1:1 to Slate's talent-led brand structure. Can manage ambassador programs and produce content that demonstrates measurable engagement impact.
+      </div>
+      <div class="tag-list"><span class="tag">Princess Polly</span><span class="tag">Brand Ambassador</span><span class="tag">Social Media Mgmt</span></div>
+    </div>
+
+    <div class="card approved">
+      <div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Amelia George</div><div class="candidate-school">Univ. of Cincinnati — PR + Fashion Studies</div></div><div class="score-badge"><div class="score-num">7</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:70%"></div></div>
+      <span class="status-pill pill-interview"><span class="pill-dot"></span>Interviewed — Wed May 20 (4:15 PM)</span>
+      <div class="card-detail">Managed all social platforms for a beauty professional — content creation, analytics, strategy. PR major + Fashion Studies minor. Email: ameliavanitypr@gmail.com — the beauty/PR focus is genuine.</div>
+      <div class="contribution-box">
+        <div class="cb-label">💡 Contribution to Slate Brands</div>
+        Beauty-specific social media experience is directly applicable to Slate's brand roster. PR + Fashion double major bridges the gap between brand story and audience outreach — ideal for a beauty incubator.
+      </div>
+      <div class="tag-list"><span class="tag">Beauty Industry</span><span class="tag">PR Major</span><span class="tag">Analytics</span><span class="tag">Content Strategy</span></div>
+    </div>
+
+    <div class="card approved">
+      <div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Maxwell Smith</div><div class="candidate-school">Univ. of Vermont (3.90 GPA)</div></div><div class="score-badge"><div class="score-num">7</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:70%"></div></div>
+      <span class="status-pill pill-contacted"><span class="pill-dot"></span>Contacted</span>
+      <div class="card-detail">Growth Marketing Intern at SHADES — social media campaigns reaching 11,000 students. Public Communication major. Google Workspace + Canva. Outreach sent, awaiting reply.</div>
+      <div class="contribution-box">
+        <div class="cb-label">💡 Contribution to Slate Brands</div>
+        Growth marketing mindset applied to social campaigns. SHADES campaign scale (11K students) shows he can manage reach metrics. Strong academic record signals reliability and follow-through.
+      </div>
+      <div class="tag-list"><span class="tag">Growth Marketing</span><span class="tag">Canva</span><span class="tag">G-Suite</span></div>
+    </div>
+
+  </div>
+
+  <div class="subsection-label">❌ Rejected Candidates (Selected)</div>
+  <div class="candidate-grid">
+    <div class="card rejected"><div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Rei Meta</div><div class="candidate-school">—</div></div><div class="score-badge"><div class="score-num">3</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:30%"></div></div>
+      <span class="status-pill pill-rejected"><span class="pill-dot"></span>Rejected</span>
+      <div class="rejection-reason">Entire background in supply chain, SaaS, private label procurement. Zero social media or influencer marketing experience. CV objective targets product/procurement teams, not marketing.</div>
+    </div>
+    <div class="card rejected"><div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Marina de Oliveira</div><div class="candidate-school">MS Marketing (4.0 GPA)</div></div><div class="score-badge"><div class="score-num">6</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:60%"></div></div>
+      <span class="status-pill pill-rejected"><span class="pill-dot"></span>Rejected</span>
+      <div class="rejection-reason">Strong general social media skills but no influencer-specific work. Graduate-level profile likely overqualified for an unpaid internship.</div>
+    </div>
+    <div class="card rejected"><div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Sara Hamdallah</div><div class="candidate-school">FIT</div></div><div class="score-badge"><div class="score-num">6</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:60%"></div></div>
+      <span class="status-pill pill-rejected"><span class="pill-dot"></span>Rejected</span>
+      <div class="rejection-reason">Academic PR coursework and Gen Z research interest but no platform proficiency (TikTok/IG not mentioned). All experience is retail.</div>
+    </div>
+    <div class="card rejected"><div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Kyrell Williams</div><div class="candidate-school">—</div></div><div class="score-badge"><div class="score-num">6</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:60%"></div></div>
+      <span class="status-pill pill-rejected"><span class="pill-dot"></span>Rejected</span>
+      <div class="rejection-reason">Social media at Copped NOLA shows creativity but mostly hospitality background. No influencer campaign or brand partnership experience.</div>
+    </div>
+    <div class="card rejected"><div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Hayden Lin</div><div class="candidate-school">Rutgers University</div></div><div class="score-badge"><div class="score-num">3</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:30%"></div></div>
+      <span class="status-pill pill-rejected"><span class="pill-dot"></span>Rejected</span>
+      <div class="rejection-reason">Finance-track with 4.0 GPA. No digital marketing, social media, or influencer experience whatsoever.</div>
+    </div>
+    <div class="card rejected"><div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Gaurav Gautam</div><div class="candidate-school">Adelphi University</div></div><div class="score-badge"><div class="score-num">3</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:30%"></div></div>
+      <span class="status-pill pill-rejected"><span class="pill-dot"></span>Rejected</span>
+      <div class="rejection-reason">Information Systems/Data focus. No marketing relevance for an influencer role.</div>
+    </div>
+    <div class="card rejected"><div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Nicole Meskos</div><div class="candidate-school">—</div></div><div class="score-badge"><div class="score-num">—</div><div class="score-denom"></div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:0%"></div></div>
+      <span class="status-pill pill-declined"><span class="pill-dot"></span>Offer Declined</span>
+      <div class="declined-note">Was directly offered the Content & Social Media Intern role by Judah (April 23). Declined April 25: "I have accepted a different internship for this summer." Interested in staying connected for future opportunities. CV was image-based PDF — couldn't be scored.</div>
+    </div>
+  </div>
+
+
+  <!-- ═══ ROLE 3: DIGITAL MARKETING ═══ -->
+  <div class="section-title">
+    <div class="role-icon" style="background:#ECFDF5;">📊</div>
+    <div><h2>Digital Marketing Intern</h2><div class="role-meta">Summer 2026 · Remote · Unpaid · Northeastern University Batch</div></div>
+    <div class="section-line"></div>
+    <div class="count-pill" style="background:#ECFDF5;color:#065F46;">11 reviewed · 8 approved · 2 Hired ✓</div>
+  </div>
+
+  <div class="subsection-label">✅ Approved Candidates</div>
+  <div class="candidate-grid">
+
+    <div class="card hired">
+      <div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Maisie Henshaw</div><div class="candidate-school">Syracuse University — Newhouse School</div></div><div class="score-badge"><div class="score-num">8</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:80%"></div></div>
+      <span class="status-pill pill-onboarding"><span class="pill-dot"></span>✓ Hired — Onboarding in Progress</span>
+      <div class="card-detail">NDA sent May 15. Currently reviewing survival clause (5-year confidentiality period). Super excited to join the team. Also interviewed for Influencer Partnerships role.</div>
+      <div class="contribution-box">
+        <div class="cb-label">💡 Contribution to Slate Brands</div>
+        Campaign strategy and KPI reporting for Slate's digital marketing across all brands. Newhouse training + TNH Agency internship means she can independently structure and analyze campaigns — not just execute tasks.
+      </div>
+      <div class="tag-list"><span class="tag green">✓ Onboarding</span><span class="tag">Campaign Strategy</span><span class="tag">Analytics</span><span class="tag">Consumer Research</span></div>
+    </div>
+
+    <div class="card hired">
+      <div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Gabriela Carvajal</div><div class="candidate-school">—</div></div><div class="score-badge"><div class="score-num">—</div><div class="score-denom"></div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:0%"></div></div>
+      <span class="status-pill pill-onboarding"><span class="pill-dot"></span>✓ Hired — Onboarding in Progress</span>
+      <div class="card-detail">NDA sent May 15. Onboarding active — schedule being confirmed through July 4th. Also working part-time retail alongside internship. Highly engaged and communicative.</div>
+      <div class="contribution-box">
+        <div class="cb-label">💡 Contribution to Slate Brands</div>
+        Active onboarding — will be contributing to Slate's digital marketing execution starting this summer. Strong communicator who proactively follows up on next steps.
+      </div>
+      <div class="tag-list"><span class="tag green">✓ Onboarding</span><span class="tag">Digital Marketing</span><span class="tag">Content</span></div>
+    </div>
+
+    <div class="card approved">
+      <div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Gia Saini</div><div class="candidate-school">Northeastern University</div></div><div class="score-badge"><div class="score-num">9</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:90%"></div></div>
+      <span class="status-pill pill-awaiting"><span class="pill-dot"></span>Awaiting Reply — Follow-up Apr 22</span>
+      <div class="card-detail">Google Analytics + HubSpot certified. Real agency internships with major brands. Quantified results across all marketing channels. Top scoring Northeastern candidate.</div>
+      <div class="contribution-box">
+        <div class="cb-label">💡 Contribution to Slate Brands</div>
+        Could independently run full-funnel digital campaigns with her Google Analytics + HubSpot certifications. Her agency background means she can handle multiple brands simultaneously — perfect for an incubator model.
+      </div>
+      <div class="tag-list"><span class="tag gold">⭐ Top Pick</span><span class="tag">Google Analytics</span><span class="tag">HubSpot</span><span class="tag">SEO/SEM</span></div>
+    </div>
+
+    <div class="card declined-card">
+      <div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Logan Mack</div><div class="candidate-school">Northeastern University</div></div><div class="score-badge"><div class="score-num">8</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:80%"></div></div>
+      <span class="status-pill pill-declined"><span class="pill-dot"></span>Declined — Accepted Another Internship</span>
+      <div class="card-detail">Scored 8/10. Very engaged initially — "I'd love to discuss the position!" Declined May 5 citing recently committed to another summer internship.</div>
+      <div class="declined-note">"I did want to be transparent with you — I've just recently committed to another internship." Wished well. Strong candidate for future cycles.</div>
+    </div>
+
+    <div class="card approved">
+      <div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Rithwik Goke</div><div class="candidate-school">Northeastern University</div></div><div class="score-badge"><div class="score-num">8</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:80%"></div></div>
+      <span class="status-pill pill-awaiting"><span class="pill-dot"></span>Awaiting Reply — Follow-up Apr 22</span>
+      <div class="card-detail">Strong digital marketing and campaign execution background. Outreach sent, follow-up sent April 22 — no reply yet.</div>
+      <div class="contribution-box">
+        <div class="cb-label">💡 Contribution to Slate Brands</div>
+        Campaign execution and performance analysis. Can support cross-platform marketing strategy and contribute to KPI reporting for Slate's brand portfolio.
+      </div>
+      <div class="tag-list"><span class="tag">Campaign Exec</span><span class="tag">Analytics</span><span class="tag">G-Suite</span></div>
+    </div>
+
+    <div class="card approved">
+      <div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">David Kim</div><div class="candidate-school">Northeastern University</div></div><div class="score-badge"><div class="score-num">7</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:70%"></div></div>
+      <span class="status-pill pill-contacted"><span class="pill-dot"></span>Outreach Sent — May 21</span>
+      <div class="card-detail">Digital marketing skills with social media management experience. Personalized outreach sent.</div>
+      <div class="contribution-box">
+        <div class="cb-label">💡 Contribution to Slate Brands</div>
+        Social media scheduling and content management. Can maintain consistent publishing cadence across Slate's brand accounts.
+      </div>
+      <div class="tag-list"><span class="tag">Social Media</span><span class="tag">Content</span><span class="tag">Digital Mktg</span></div>
+    </div>
+
+    <div class="card approved">
+      <div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Xinyue Chen</div><div class="candidate-school">Northeastern University</div></div><div class="score-badge"><div class="score-num">7</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:70%"></div></div>
+      <span class="status-pill pill-contacted"><span class="pill-dot"></span>Outreach Sent — May 21</span>
+      <div class="card-detail">Also scored 8/10 for Data Research Intern role. Dual-approved candidate with strong analytical and digital marketing skills.</div>
+      <div class="contribution-box">
+        <div class="cb-label">💡 Contribution to Slate Brands</div>
+        Bridges digital marketing execution and data analysis — a rare dual-skill set. Can support both the digital marketing team and the data research function if needed.
+      </div>
+      <div class="tag-list"><span class="tag gold">Dual Approved</span><span class="tag">Analytics</span><span class="tag">Research</span><span class="tag">Digital Mktg</span></div>
+    </div>
+
+    <div class="card approved">
+      <div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Adam Ochoa</div><div class="candidate-school">Northeastern University</div></div><div class="score-badge"><div class="score-num">7</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:70%"></div></div>
+      <span class="status-pill pill-contacted"><span class="pill-dot"></span>Outreach Sent — May 21</span>
+      <div class="card-detail">Good fit with relevant coursework and organizational skills for digital marketing execution.</div>
+      <div class="contribution-box">
+        <div class="cb-label">💡 Contribution to Slate Brands</div>
+        Platform management and content scheduling support. Organized profile suits the multi-brand environment of a beauty incubator.
+      </div>
+      <div class="tag-list"><span class="tag">Marketing</span><span class="tag">Content</span><span class="tag">G-Suite</span></div>
+    </div>
+
+    <div class="card approved">
+      <div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Sabrina Liang</div><div class="candidate-school">Northeastern University</div></div><div class="score-badge"><div class="score-num">7</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:70%"></div></div>
+      <span class="status-pill pill-contacted"><span class="pill-dot"></span>Outreach Sent — May 21</span>
+      <div class="card-detail">Content creation and digital marketing background. Strong social media foundation.</div>
+      <div class="contribution-box">
+        <div class="cb-label">💡 Contribution to Slate Brands</div>
+        Content creation and community management for Slate's brand social channels. Can support campaign rollouts with consistent, on-brand content production.
+      </div>
+      <div class="tag-list"><span class="tag">Content Creation</span><span class="tag">Social Media</span><span class="tag">Marketing</span></div>
+    </div>
+
+    <div class="card approved">
+      <div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Sofi Fischer</div><div class="candidate-school">Northeastern University</div></div><div class="score-badge"><div class="score-num">7</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:70%"></div></div>
+      <span class="status-pill pill-contacted"><span class="pill-dot"></span>Outreach Sent — May 21</span>
+      <div class="card-detail">New applicant added to Northeastern batch. Strong digital marketing and campaign execution profile.</div>
+      <div class="contribution-box">
+        <div class="cb-label">💡 Contribution to Slate Brands</div>
+        Digital campaign support and performance tracking. Can contribute to KPI reporting and help optimize ad and content performance across platforms.
+      </div>
+      <div class="tag-list"><span class="tag">Campaign Exec</span><span class="tag">Digital Mktg</span><span class="tag">Analytics</span></div>
+    </div>
+
+  </div>
+
+  <div class="subsection-label">❌ Rejected Candidates</div>
+  <div class="candidate-grid">
+    <div class="card rejected"><div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Advait Nand Gupta</div><div class="candidate-school">Northeastern University</div></div><div class="score-badge"><div class="score-num">6</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:60%"></div></div>
+      <span class="status-pill pill-rejected"><span class="pill-dot"></span>Rejected</span>
+      <div class="rejection-reason">Submitted only a cover letter — no CV found. Insufficient profile to evaluate against role requirements.</div>
+    </div>
+    <div class="card rejected"><div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Olivia Levine</div><div class="candidate-school">Northeastern University</div></div><div class="score-badge"><div class="score-num">5</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:50%"></div></div>
+      <span class="status-pill pill-rejected"><span class="pill-dot"></span>Rejected</span>
+      <div class="rejection-reason">Limited digital marketing experience. Academic background doesn't demonstrate campaign execution or analytics skills required.</div>
+    </div>
+    <div class="card rejected"><div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Godfrey Gunda</div><div class="candidate-school">Northeastern University</div></div><div class="score-badge"><div class="score-num">2</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:20%"></div></div>
+      <span class="status-pill pill-rejected"><span class="pill-dot"></span>Rejected</span>
+      <div class="rejection-reason">Very limited alignment with Digital Marketing role. No relevant social media, content creation, or campaign management experience identified.</div>
+    </div>
+  </div>
+
+
+  <!-- ═══ ROLE 4: DATA RESEARCH ═══ -->
+  <div class="section-title">
+    <div class="role-icon" style="background:#FFF7ED;">🔬</div>
+    <div><h2>Data Research Intern</h2><div class="role-meta">Summer 2026 · Remote · Unpaid</div></div>
+    <div class="section-line"></div>
+    <div class="count-pill" style="background:#FFF7ED;color:#9A3412;">12 reviewed · 6 approved · ⚠️ Outreach Pending</div>
+  </div>
+
+  <div class="subsection-label">✅ Approved Candidates — Outreach Not Yet Sent</div>
+  <div class="candidate-grid">
+
+    <div class="card pending">
+      <div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Devarshi Dave</div><div class="candidate-school">—</div></div><div class="score-badge"><div class="score-num">9</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:90%"></div></div>
+      <span class="status-pill pill-pending"><span class="pill-dot"></span>Outreach Pending</span>
+      <div class="card-detail">Top-scoring Data Research candidate. Strong research and analytical background with high alignment to the role's market insight focus.</div>
+      <div class="contribution-box">
+        <div class="cb-label">💡 Contribution to Slate Brands</div>
+        Market trend analysis and competitive research to inform Slate's new brand launches. His top score reflects the kind of structured analytical thinking needed to build the brand intelligence that drives Slate's portfolio decisions.
+      </div>
+      <div class="tag-list"><span class="tag gold">⭐ Top Pick</span><span class="tag">Data Research</span><span class="tag">Market Analysis</span><span class="tag">Reporting</span></div>
+    </div>
+
+    <div class="card pending">
+      <div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Xinyue Chen</div><div class="candidate-school">Northeastern University</div></div><div class="score-badge"><div class="score-num">8</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:80%"></div></div>
+      <span class="status-pill pill-contacted"><span class="pill-dot"></span>Contacted for Digital Mktg · Data Research Pending</span>
+      <div class="card-detail">Dual-approved for both Digital Marketing (7/10) and Data Research (8/10). Outreach for Digital Marketing sent May 21 — Data Research contact still pending.</div>
+      <div class="contribution-box">
+        <div class="cb-label">💡 Contribution to Slate Brands</div>
+        Rare dual-skill profile — can bridge the gap between marketing execution and data analysis. Ideal for Slate's data-informed brand strategy needs.
+      </div>
+      <div class="tag-list"><span class="tag gold">Dual Approved</span><span class="tag">Analytics</span><span class="tag">Research</span></div>
+    </div>
+
+    <div class="card pending">
+      <div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Dhruvi Mehta</div><div class="candidate-school">—</div></div><div class="score-badge"><div class="score-num">8</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:80%"></div></div>
+      <span class="status-pill pill-pending"><span class="pill-dot"></span>Outreach Pending</span>
+      <div class="card-detail">Strong research and data analysis skills. Excellent alignment with the role's focus on market insights and reporting for strategic planning.</div>
+      <div class="contribution-box">
+        <div class="cb-label">💡 Contribution to Slate Brands</div>
+        Consumer behavior research and reporting for brand positioning. Can support product launch briefs with data-driven insights across beauty and CPG markets.
+      </div>
+      <div class="tag-list"><span class="tag">Market Research</span><span class="tag">Data Analysis</span><span class="tag">G-Suite</span></div>
+    </div>
+
+    <div class="card pending">
+      <div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Rishi Ganapathi Senthil Kumar</div><div class="candidate-school">—</div></div><div class="score-badge"><div class="score-num">8</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:80%"></div></div>
+      <span class="status-pill pill-pending"><span class="pill-dot"></span>Outreach Pending</span>
+      <div class="card-detail">Analytical and data-driven profile. Background in data collection, analysis, and insight reporting directly relevant to the role.</div>
+      <div class="contribution-box">
+        <div class="cb-label">💡 Contribution to Slate Brands</div>
+        Data collection and dashboard creation for internal stakeholders. Can help Slate build tracking systems for category performance, pricing trends, and audience engagement.
+      </div>
+      <div class="tag-list"><span class="tag">Data Collection</span><span class="tag">Dashboards</span><span class="tag">Analytics Tools</span></div>
+    </div>
+
+    <div class="card pending">
+      <div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Bompelli Omsri</div><div class="candidate-school">—</div></div><div class="score-badge"><div class="score-num">7</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:70%"></div></div>
+      <span class="status-pill pill-pending"><span class="pill-dot"></span>Outreach Pending</span>
+      <div class="card-detail">Meets core requirements. Good research orientation and solid analytical skills.</div>
+      <div class="contribution-box">
+        <div class="cb-label">💡 Contribution to Slate Brands</div>
+        Research support for category performance tracking. Can assist with data tagging, collection, and compiling reports that feed into Slate's brand strategy decisions.
+      </div>
+      <div class="tag-list"><span class="tag">Research</span><span class="tag">Data Reporting</span><span class="tag">Excel</span></div>
+    </div>
+
+    <div class="card pending">
+      <div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Ramzi Masri</div><div class="candidate-school">—</div></div><div class="score-badge"><div class="score-num">7</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:70%"></div></div>
+      <span class="status-pill pill-pending"><span class="pill-dot"></span>Outreach Pending</span>
+      <div class="card-detail">Solid research and data skills. Good alignment with the research-heavy responsibilities and competitive landscape analysis needs.</div>
+      <div class="contribution-box">
+        <div class="cb-label">💡 Contribution to Slate Brands</div>
+        Market research and competitive landscape analysis to support Slate's brand portfolio decisions. Can synthesize findings into clear briefs and presentations for internal stakeholders.
+      </div>
+      <div class="tag-list"><span class="tag">Market Analysis</span><span class="tag">Reporting</span><span class="tag">G-Suite</span></div>
+    </div>
+
+  </div>
+
+  <div class="subsection-label">❌ Rejected Candidates</div>
+  <div class="candidate-grid">
+    <div class="card rejected"><div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Riana Fazir</div><div class="candidate-school">—</div></div><div class="score-badge"><div class="score-num">6</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:60%"></div></div>
+      <span class="status-pill pill-rejected"><span class="pill-dot"></span>Rejected</span>
+      <div class="rejection-reason">Some research skills present but insufficient analytical depth for a data-research focused role.</div>
+    </div>
+    <div class="card rejected"><div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Quinn Sebso</div><div class="candidate-school">—</div></div><div class="score-badge"><div class="score-num">5</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:50%"></div></div>
+      <span class="status-pill pill-rejected"><span class="pill-dot"></span>Rejected</span>
+      <div class="rejection-reason">Insufficient experience with research tools, spreadsheets, or analytical reporting.</div>
+    </div>
+    <div class="card rejected"><div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Karan Badlani</div><div class="candidate-school">—</div></div><div class="score-badge"><div class="score-num">4</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:40%"></div></div>
+      <span class="status-pill pill-rejected"><span class="pill-dot"></span>Rejected</span>
+      <div class="rejection-reason">Does not demonstrate research, analytical, or data-reporting skills required for this role.</div>
+    </div>
+    <div class="card rejected"><div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Rahul Gudivada</div><div class="candidate-school">—</div></div><div class="score-badge"><div class="score-num">4</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:40%"></div></div>
+      <span class="status-pill pill-rejected"><span class="pill-dot"></span>Rejected</span>
+      <div class="rejection-reason">Background does not align with consumer insight research or beauty/CPG market analysis.</div>
+    </div>
+    <div class="card rejected"><div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Sushma Ramesh</div><div class="candidate-school">—</div></div><div class="score-badge"><div class="score-num">3</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:30%"></div></div>
+      <span class="status-pill pill-rejected"><span class="pill-dot"></span>Rejected</span>
+      <div class="rejection-reason">Very limited data, research, or analytics experience. Does not meet core requirements.</div>
+    </div>
+    <div class="card rejected"><div class="card-accent"></div>
+      <div class="card-header"><div><div class="candidate-name">Nikhil Shekhawat</div><div class="candidate-school">—</div></div><div class="score-badge"><div class="score-num">3</div><div class="score-denom">/10</div></div></div>
+      <div class="score-bar-wrap"><div class="score-bar" style="width:30%"></div></div>
+      <span class="status-pill pill-rejected"><span class="pill-dot"></span>Rejected</span>
+      <div class="rejection-reason">Insufficient alignment with research, data analysis, or insight reporting. Does not meet minimum requirements.</div>
+    </div>
+  </div>
+
+</div><!-- /main -->
+
+<div class="page-footer">
+  <strong style="color:rgba(255,255,255,0.7)">Slate Brands</strong> · Summer 2026 Intern Search · Prepared by <span>Paula Medina</span> · paulam@slatebrands.com · May 2026<br>
+  <span style="font-size:11px;color:rgba(255,255,255,0.3);margin-top:5px;display:block;">Internal document — not for external distribution</span>
+</div>
+
+</body>
+</html>
